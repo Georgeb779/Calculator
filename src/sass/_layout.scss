@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( to bottom right, $main_corlor 0%, $secundary_color 100%);
+}
+
+.calculator {
+    font-size: 18rem;
+    width: 350px;
+    height: 500px;
+    background: $buttons_color;
+}
