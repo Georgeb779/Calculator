@@ -83,6 +83,7 @@ main {
   font-size: 15rem;
   padding-top: 15px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .screen__content {
@@ -116,7 +117,7 @@ main {
 }
 
 .button:nth-child(4n) {
-  background: #9ad1d4;
+  background: #335F70;
 }
 
 .button:nth-child(17) {
@@ -128,7 +129,7 @@ main {
 }
 
 .button:not(:nth-child(18)):hover {
-  background: #02c39a;
+  background: #0C6291;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
