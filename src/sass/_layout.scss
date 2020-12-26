@@ -10,6 +10,7 @@
 html {
     font-size: 6.25%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 main {
@@ -98,7 +99,6 @@ main {
         border-bottom-right-radius: 15px;
     }
     &:not(:nth-child(18)):hover {
-        background: $hover_color;
         cursor: pointer;
     }
 }
