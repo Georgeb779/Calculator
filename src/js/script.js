@@ -28,9 +28,35 @@ const writeOperation = (text) => {
 }
 
 const writeResult = () => {
+    if (isNaN(lastValue()) && lastValue() !== ')')
+        screenOperation.textContent = screenOperation.textContent.substring(0, screenOperation.textContent.length - 1);
+
+
     screenResult.textContent = eval(screenOperation.textContent);
     operationComplete = true;
 }
+
+
+const changeSing = () => {
+    let lastNumber = '';
+    let position = 0;
+    if (!isNaN(lastValue())) {
+        for (let i = screenOperation.textContent.length - 1; i > 0; i--) {
+            if (isNaN(screenOperation.textContent[i])) {
+                position = i + 1;
+                break;
+            }
+
+        }
+
+    }
+
+    lastNumber = screenOperation.textContent.substring(position)
+    screenOperation.textContent = screenOperation.textContent.replace(lastNumber, `(${lastNumber*-1})`)
+
+}
+
+
 
 
 const resetScreen = () => {

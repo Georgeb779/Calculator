@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 6.25%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( to bottom right, $main_corlor 0%, $secundary_color 100%);
+}
+
+.calculator {
+    font-size: 20rem;
+    border: .5px solid $boder_color;
+    width: 290px;
+    height: 479px;
+    background: transparent;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 2px 8px 5px 1px $dark_color;
+}
+
+.top-bar {
+    position: relative;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 50px;
+    background: $base_color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid $top_bar_border;
+    margin-bottom: 2px;
+    &::before {
+        content: "";
+        margin-left: 30px;
+        position: absolute;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $sub_button_A;
+        box-shadow: 20px 0 0 $sub_button_B, -20px 0 0 $sub_button_C;
+    }
+}
+
+.screen {
+    width: 100%;
+    height: 120px;
+    text-align: right;
+    background: $base_color;
+    &__top {
+        font-size: 15rem;
+        padding-top: 15px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    &__content {
+        font-size: 30rem;
+        margin-right: 10px;
+    }
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 12px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    background: $base_color;
+    width: 60rem;
+    height: 50rem;
+    &:nth-child(4n) {
+        background: $buttons_color;
+    }
+    &:nth-child(17) {
+        border-bottom-left-radius: 15px;
+    }
+    &:last-child {
+        border-bottom-right-radius: 15px;
+    }
+    &:not(:nth-child(18)):hover {
+        background: $hover_color;
+        cursor: pointer;
+    }
+}
