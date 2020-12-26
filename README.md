@@ -1,5 +1,5 @@
 # Calculator
-This calculator is made with vanilla Js, HTML5 and css.
+This calculator is made with vanilla Js, HTML5 and SASS.
 
 
 
