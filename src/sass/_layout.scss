@@ -99,6 +99,7 @@ main {
         border-bottom-right-radius: 15px;
     }
     &:not(:nth-child(18)):active {
+        background: $hover_color;
         cursor: pointer;
     }
 }

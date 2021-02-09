@@ -130,6 +130,7 @@ main {
 }
 
 .button:not(:nth-child(18)):active {
+  background: #0C6291;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
