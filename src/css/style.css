@@ -129,7 +129,8 @@ main {
   border-bottom-right-radius: 15px;
 }
 
-.button:not(:nth-child(18)):hover {
+.button:not(:nth-child(18)):active {
+  background: #0C6291;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
