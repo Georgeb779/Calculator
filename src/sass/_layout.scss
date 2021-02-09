@@ -98,7 +98,7 @@ main {
     &:last-child {
         border-bottom-right-radius: 15px;
     }
-    &:not(:nth-child(18)):hover {
+    &:not(:nth-child(18)):active {
         cursor: pointer;
     }
 }
